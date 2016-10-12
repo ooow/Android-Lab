@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_profile"
+            android:title="@string/drawer.profile" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/drawer.friend" />
+
+        <item
+            android:id="@+id/nav_uved"
+            android:icon="@drawable/ic_uved_off"
+            android:title="@string/drawer.notifications" />
+
+        <item
+            android:id="@+id/nav_synk"
+            android:icon="@drawable/ic_synk_off"
+            android:title="@string/drawer.synchronize" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/drawer.help" />
+
+        <item
+            android:id="@+id/nav_star"
+            android:icon="@drawable/ic_recall"
+            android:title="@string/drawer.recall" />
+
+        <item
+            android:id="@+id/nav_error"
+            android:icon="@drawable/ic_error"
+            android:title="@string/drawer.error" />
+
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info"
+            android:title="@string/drawer.about" />
+
+        <item android:title="@string/drawer.day.of.week">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_monday"
+                        android:title="@string/drawer.seeker.monday" />
+                    <item
+                        android:id="@+id/nav_sanday"
+                        android:title="@string/drawer.seeker.sanday" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

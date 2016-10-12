@@ -1,0 +1,20 @@
+<resources>
+    <declare-styleable name="circleview">
+        <attr name="cRadius" format="integer" />
+        <attr name="cFillColor" format="color" />
+        <attr name="cStrokeColor" format="color" />
+        <attr name="cAngleStart" format="integer" />
+        <attr name="cAngleEnd" format="integer" />
+        <attr name="secondArcColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SlantingProgressBar">
+        <attr name="slantingProgress" format="integer"/>
+        <attr name="borderRadius" format="integer"/>
+        <attr name="borderColor" format="integer"/>
+        <attr name="slantingProgressColor" format="string"/>
+        <attr name="progressBackgroundColor" format="string"/>
+        <attr name="slantingProgressFullColor" format="string"/>
+
+    </declare-styleable>
+</resources>

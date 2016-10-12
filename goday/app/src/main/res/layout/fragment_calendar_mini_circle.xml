@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="27dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пить воду"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 раз в день"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+
+            <su.goday.goday.ui.main.CalendarMiniCircle
+                android:id="@+id/circle7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:paddingRight="3dp"
+                android:text="0/5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

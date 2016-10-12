@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@mipmap/home"
+            android:title="@string/menu0" />
+        <item
+            android:id="@+id/nav_star"
+            android:icon="@mipmap/star"
+            android:title="@string/menu1" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/setting"
+            android:title="@string/menu2" />
+        <item
+            android:id="@+id/nav_five"
+            android:icon="@mipmap/five"
+            android:title="@string/menu4" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@mipmap/info"
+            android:title="@string/menu3" />
+    </group>
+</menu>

@@ -1,0 +1,767 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:configChanges="orientation"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context="com.tirkiyaicloud.businesscompliments.fragments.FragmentStar">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texv29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texv30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/im15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/on_star" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

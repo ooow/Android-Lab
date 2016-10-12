@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_with_shadow"
+        android:text="@string/login.button.enter"
+        android:textAllCaps="false"
+        android:textColor="@color/dark.gray.text"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+</LinearLayout>

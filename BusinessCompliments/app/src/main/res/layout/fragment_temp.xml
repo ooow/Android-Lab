@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tirkiyaicloud.businesscompliments.TempFragment">
+
+    <include layout="@layout/my_toolbar1" />
+
+    <TextView
+        android:id="@+id/big_text_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/padding"
+        android:textAlignment="center"
+        android:textColor="@color/color4"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/color4" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fragment_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="90dp"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:paddingTop="@dimen/padding"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/title" />
+
+        <TextView
+            android:id="@+id/counted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_weight="1"
+            android:padding="@dimen/padding"
+            android:textColor="@color/color2"
+            android:textSize="@dimen/fab_margin" />
+
+        <ImageButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="30dp"
+            android:src="@mipmap/in_star" />
+    </FrameLayout>
+</LinearLayout>

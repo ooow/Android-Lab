@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">GoDay</string>
+    <integer name="com_vk_sdk_AppId">5604855</integer>
+    <string name="facebook_app_id">190766724674899</string>
+
+
+    <string name="login.email.text">E-mail</string>
+    <string name="login.password.text">Пароль</string>
+    <string name="login.button.enter">Войти</string>
+
+
+    <string name="login.registration.text">Регистрация профиля</string>
+    <string name="user.name">Имя</string>
+    <string name="login.password">Пароль</string>
+    <string name="login.password.repeat">Повторите пароль</string>
+    <string name="login.button.registration">Регистрация</string>
+    <string name="login.do.you.have.account">Есть учетная запись?</string>
+    <string name="login.enter.with.social">Или войдите с помощью\nаккаунта социальной сети</string>
+    <string name="login.forgot.pass">Напомнить пароль</string>
+
+
+    <string name="error_ok">Регистрация прошла успешна</string>
+    <string name="error1">Пользователь с таким email уже зарегистрирован</string>
+    <string name="error2">Пользователь уже зарегистрирован</string>
+    <string name="error3">Произошла ошибка, попробуйте снова</string>
+    <string name="error_connect">Проблема с интернет соединением</string>
+    <string name="error_login">Неверный логин или пароль</string>
+
+
+    <!-- Start Activity -->
+    <string name="circle.description">Колесо жизни - наглядный инструмент, который подскажет в каком направлении работать над собой. Задайте текущее значение оценив каждую сферу жизни, где 1 - все очень плохо. 100 - мечты сбылись и выше только звезды.</string>
+    <string name="circle.specific">Личностный рост</string>
+    <string name="circle.bright">Яркость жизни</string>
+    <string name="circle.money">Деньги</string>
+    <string name="circle.carier">Карьера и бизнес</string>
+    <string name="circle.creation">Творчество</string>
+    <string name="circle.friends">Друзья и окружение</string>
+    <string name="circle.health">Здоровье и спорт</string>
+    <string name="circle.relationships">Отношения</string>
+    <string name="button.ready">Готово</string>
+
+    <string name="information.wheel.i">Наша жизнь состоит из 8 сфер, каждая из которых по своему важна:\n
+        1 Здоровье и спорт\n
+        2 Деньги и финансы\n
+        3 Личностный рост\n
+        4 Духовность и творчество\n
+        5 Семья и отношения\n
+        6 Карьера и Бизнес\n
+        7 Отдых и яркость жизни\n
+        8 Друзья и окружение\n\n
+        Что бы быть по настоящему счастливым человеком необходимо достигать гармонии во всех секторах. Мы часто зацикливаемся на одном из пунктов, например, карьере и бизнесе – как следствие, здоровье, семья и пр. уходят на второй план… - мы движемся по карьерной лестнице, но это не делает нас счастливыми, нет чувства полноценной жизни…
+        Для того, чтобы начать гармонично развиваться, необходимо:\n
+        1) составить колесо своей жизни (в приложение мы как раз с этого начинаем)\n
+        2) составить план действий по улучшению (развитие – это постоянный процесс, постоянное движение вперед. Только выполняя ежедневные задачи по улучшению мы сможем качественно изменяться – именно небольшие шажки приведут к желаемому результату – здесь, как в спорте – невозможно поднять сразу 100кг, но с регулярными тренировками это вполне под силу.
+        Составить план действий по улучшению жизни можно на главном экране. Для удобства приведены также наиболее популярные задачи развития во вкладке Шаблон Задач. Больше примеров вы найдете на сайте goday.su\n
+        3) контролировать результат – без ежедневного контроля задач весь труд будет напрасен. Есть правило выработки привычки – необходимо выполнять действие 21 день для того что б оно превратилось в привычку и выполнялось без труда.\n
+        Также, у вас всегда под рукой телефон – с виджетом вы сможете контролировать выполнение задач не заходя даже в само приложение! </string>
+
+    <string name="drawer.profile">Настройки профиля</string>
+    <string name="drawer.language">Язык</string>
+    <string name="drawer.language.rus">Русский</string>
+    <string name="drawer.day.of.week">Первый день недели</string>
+    <string name="drawer.notifications">Уведомления</string>
+    <string name="drawer.eadress">Электронный адрес</string>
+    <string name="drawer.synchronize">Синхронизация</string>
+    <string name="drawer.friend">Пригласить друга</string>
+    <string name="drawer.help">Помощь</string>
+    <string name="drawer.recall">Оставить отзыв</string>
+    <string name="drawer.error">Сообщить об ошибке</string>
+    <string name="drawer.about">О приложении</string>
+    <string name="drawer.seeker.sanday">Воскресенье</string>
+    <string name="drawer.seeker.monday">Понедельник</string>
+    <string name="round_life_white">round_life_white</string>
+    <string name="target">target</string>
+
+
+    <string name="title_activity_main">Main Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="profile.exit">Выйти из профиля</string>
+    <string name="profile.preium.activated">Premium активирован</string>
+    <string name="profile.premium.not.arctivated">Premium не активирован</string>
+
+    <string name="task.new.target.mon">ПН</string>
+    <string name="task.new.target.thu">ВТ</string>
+    <string name="task.new.target.wen">СР</string>
+    <string name="task.new.target.sut">ЧТ</string>
+    <string name="task.new.target.fr">ПТ</string>
+    <string name="task.new.target.surth">СБ</string>
+    <string name="task.new.target.sun">ВС</string>
+
+
+    <string name="calendar.task">Задание от GoDay:</string>
+
+
+    <string name="about_text">Условия использования\n\nПолитика конфиденциальности\n\nКонтакты: admin@goday.su\n\nВерсия приложения: 1.0</string>
+
+</resources>
