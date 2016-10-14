@@ -9,20 +9,35 @@
 
 
     <ImageView
-        android:id="@+id/profile_click"
+        android:id="@+id/back_press"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:paddingBottom="5dp"
-        android:paddingRight="20dp"
-        android:paddingTop="5dp"
-        android:src="@mipmap/ic_profile" />
+        android:src="@mipmap/arrow_white" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|left"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profile_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@mipmap/ic_profile" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile_frame_main" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/toolbar_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/toolbar_text_size" />
 

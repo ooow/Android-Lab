@@ -16,11 +16,13 @@ import org.json.JSONObject;
 import su.goday.goday.API.GoDayRequestAPI;
 import su.goday.goday.R;
 import su.goday.goday.ui.main.MainActivity;
+import su.goday.goday.user.User;
 
 public class LoginActivity extends Activity {
     private Button regButton;
     private Button logButton;
     private Intent intent;
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,9 +79,12 @@ public class LoginActivity extends Activity {
                                 switch (status) {
                                     case "User found...":
                                         Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
-                                        intent1.putExtra("type", "email");
+                                        user = User.getInstance();
+                                        user.setUsername(email.getText().toString());
+                                        user.setEmail(password.getText().toString());
+                                        /*intent1.putExtra("type", "email");
                                         intent1.putExtra("login", email.getText().toString());
-                                        intent1.putExtra("password", password.getText().toString());
+                                        intent1.putExtra("password", password.getText().toString());*/
                                         startActivity(intent1);
                                         logButton.setText("Войти");
                                         logButton.setEnabled(true);

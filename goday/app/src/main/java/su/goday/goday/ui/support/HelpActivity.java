@@ -17,8 +17,7 @@ public class HelpActivity extends Activity {
         setContentView(R.layout.activity_help);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
-        ImageView backPressButton = (ImageView) toolbar.findViewById(R.id.profile_click);
-        backPressButton.setImageDrawable(getResources().getDrawable(R.mipmap.arrow_white));
+        ImageView backPressButton = (ImageView) toolbar.findViewById(R.id.back_press);
 
         TextView textView = (TextView) toolbar.findViewById(R.id.toolbar_text);
         textView.setText("Помощь");
@@ -30,7 +29,6 @@ public class HelpActivity extends Activity {
             }
         });
 
-        ImageView saveButton = (ImageView) toolbar.findViewById(R.id.save_click);
-        saveButton.setVisibility(View.GONE);
+        UISuppurt.goneViews(toolbar.findViewById(R.id.save_click), toolbar.findViewById(R.id.profile_click));
     }
 }

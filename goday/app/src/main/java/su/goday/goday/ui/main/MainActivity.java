@@ -13,20 +13,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import su.goday.goday.R;
+import su.goday.goday.support.ImageManager;
+import su.goday.goday.ui.dialog.InfoDialogFragm;
+import su.goday.goday.ui.support.UISuppurt;
 import su.goday.goday.ui.wheel.WheelActivity;
 import su.goday.goday.ui.profile.UserProfileActivity;
 import su.goday.goday.ui.support.AboutActivity;
 import su.goday.goday.ui.support.HelpActivity;
+import su.goday.goday.user.User;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private ViewPager viewPager;
     private ViewPagerAdapter viewPagerAdapter;
     private ImageView profileButton;
     private Intent intent;
+    private ImageButton addTuskButton;
     private boolean uved = false;
     private boolean synk = false;
     private boolean close = false;
@@ -37,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle("");
+        TextView toolbarText = (TextView) toolbar.findViewById(R.id.toolbar_text);
+        toolbarText.setText("");
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -51,9 +62,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         profileButton = (ImageView) toolbar.findViewById(R.id.profile_click);
         profileButton.setOnClickListener(this);
+        new ImageManager().fetchImage(User.getInstance().getAvatar(), profileButton);
 
-        ImageView saveButton = (ImageView) toolbar.findViewById(R.id.save_click);
-        saveButton.setVisibility(View.GONE);
+        addTuskButton = (ImageButton) findViewById(R.id.add_task_button);
+        addTuskButton.setOnClickListener(this);
+
+
+        UISuppurt.goneViews(toolbar.findViewById(R.id.save_click), toolbar.findViewById(R.id.back_press));
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
@@ -97,8 +112,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             intent = new Intent(this, WheelActivity.class);
             startActivity(intent);
             return true;
+        } else if (id == R.id.new_task) {
+            new InfoDialogFragm().setText("Без логики дальше нельзя").show(getSupportFragmentManager(), null);
+            return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -185,6 +202,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.profile_click:
                 intent = new Intent(this, UserProfileActivity.class);
                 startActivity(intent);
+                break;
+
+            case R.id.add_task_button:
+                new InfoDialogFragm().setText("Без логики дальше нельзя").show(getSupportFragmentManager(), null);
                 break;
             default:
                 break;

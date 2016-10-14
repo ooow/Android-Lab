@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -47,6 +48,7 @@ import java.util.Arrays;
 import su.goday.goday.API.GoDayRequestAPI;
 import su.goday.goday.R;
 import su.goday.goday.ui.main.MainActivity;
+import su.goday.goday.user.User;
 
 public class RegistActivity extends Activity {
     private Button loginButton;
@@ -59,6 +61,7 @@ public class RegistActivity extends Activity {
     private EditText password;
     private CallbackManager callbackManager;
     private boolean regStatus;
+    private User user;
 
 
     private final static String G_PLUS_SCOPE = "oauth2:https://www.googleapis.com/auth/plus.me";
@@ -92,10 +95,13 @@ public class RegistActivity extends Activity {
                             registNewUser(body);
 
                             Intent intent1 = new Intent(RegistActivity.this, MainActivity.class);
-                            intent1.putExtra("type", "vk");
+                            user = User.getInstance();
+                            user.setUsername(profile.getFirstName() + " " + profile.getLastName());
+                            user.setEmail(profile.getId());
+                            /*intent1.putExtra("type", "vk");
                             intent1.putExtra("first_name", profile.getFirstName());
                             intent1.putExtra("last_name", profile.getLastName());
-                            intent1.putExtra("id", profile.getId());
+                            intent1.putExtra("id", profile.getId());*/
                             startActivity(intent1);
                         }
                     }
@@ -166,7 +172,6 @@ public class RegistActivity extends Activity {
         googleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = AccountPicker.newChooseAccountIntent(null, null, new String[]{"com.google"},
                         false, null, null, null, null);
                 startActivityForResult(intent, 123);
@@ -201,6 +206,12 @@ public class RegistActivity extends Activity {
                     public void run() {
                         switch (status) {
                             case "New user was registered by login and password...":
+                                Intent intent1 = new Intent(RegistActivity.this, MainActivity.class);
+                                user = User.getInstance();
+                                user.setUsername(name.getText().toString());
+                                user.setEmail(email.getText().toString());
+                                user.setPassword(password.getText().toString());
+                                startActivity(intent1);
                                 showStatus("Регистрация прошла успешна");
                                 break;
                             case "User with this email alrady registered...":
@@ -242,7 +253,7 @@ public class RegistActivity extends Activity {
         if (!VKSdk.onActivityResult(requestCode, resultCode, data, new VKCallback<VKAccessToken>() {
             @Override
             public void onResult(VKAccessToken res) {
-                VKRequest request = VKApi.users().get(VKParameters.from(VKApiConst.FIELDS, "photo_50", "first_name", "id"));
+                VKRequest request = VKApi.users().get(VKParameters.from(VKApiConst.FIELDS, "photo_200", "first_name", "id"));
                 request.executeWithListener(new VKRequest.VKRequestListener() {
                     @Override
                     public void onComplete(VKResponse response) {
@@ -255,7 +266,7 @@ public class RegistActivity extends Activity {
                                 String first_name = js.getString("first_name");
                                 String last_name = js.getString("last_name");
                                 String id = js.getString("id");
-                                String photo_50 = js.getString("photo_50");
+                                String photo_200 = js.getString("photo_200");
 
                                 final JSONObject body = new JSONObject();
                                 try {
@@ -269,11 +280,16 @@ public class RegistActivity extends Activity {
                                 registNewUser(body);
 
                                 Intent intent1 = new Intent(RegistActivity.this, MainActivity.class);
-                                intent1.putExtra("type", "vk");
+                                user = User.getInstance();
+                                user.setUsername(first_name + " " + last_name);
+                                user.setEmail(id);
+                                user.setAvatar(photo_200);
+
+                                /*intent1.putExtra("type", "vk");
                                 intent1.putExtra("first_name", first_name);
                                 intent1.putExtra("last_name", last_name);
                                 intent1.putExtra("id", id);
-                                intent1.putExtra("photo_50", photo_50);
+                                intent1.putExtra("photo_50", photo_50);*/
                                 startActivity(intent1);
                             }
                         } catch (JSONException e) {
@@ -332,10 +348,13 @@ public class RegistActivity extends Activity {
 
                         if (regStatus) {
                             Intent intent1 = new Intent(RegistActivity.this, MainActivity.class);
-                            intent1.putExtra("type", "vk");
+                            user = User.getInstance();
+                            user.setUsername("Google +");
+                            user.setEmail(token);
+                            /*intent1.putExtra("type", "vk");
                             intent1.putExtra("first_name", "Google");
                             intent1.putExtra("last_name", "+");
-                            intent1.putExtra("id", token);
+                            intent1.putExtra("id", token);*/
                             startActivity(intent1);
                         }
                     }

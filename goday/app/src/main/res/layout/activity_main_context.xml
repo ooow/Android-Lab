@@ -46,13 +46,13 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/border_white"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="10dp"
                 android:baselineAligned="false"
                 android:clickable="false"
+                android:gravity="center_vertical"
                 android:measureWithLargestChild="false"
                 android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp"
                 android:touchscreenBlocksFocus="false"
                 android:transitionGroup="false">
 
@@ -61,7 +61,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.1"
-                    android:text="Medium Text"
+                    android:text="Сегодня подарите комплименты \nкак минимум 5 любям"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/colorWhite" />
 
@@ -74,7 +74,7 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/addTaskButton"
+            android:id="@+id/add_task_button"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_alignBottom="@+id/relativeLayout"

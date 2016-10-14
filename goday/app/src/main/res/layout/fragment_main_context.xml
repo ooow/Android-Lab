@@ -19,21 +19,37 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l1"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l2"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l3"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l4"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l5"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l6"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l7"
+                layout="@layout/fragment_calendar_mini_circle" />
 
-            <include layout="@layout/fragment_calendar_mini_circle" />
+            <include
+                android:id="@+id/l8"
+                layout="@layout/fragment_calendar_mini_circle" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

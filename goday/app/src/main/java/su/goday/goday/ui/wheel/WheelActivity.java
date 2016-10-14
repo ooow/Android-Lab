@@ -14,6 +14,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import su.goday.goday.R;
+import su.goday.goday.ui.support.UISuppurt;
 
 
 public class WheelActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener, View.OnClickListener {
@@ -47,8 +48,7 @@ public class WheelActivity extends AppCompatActivity implements SeekBar.OnSeekBa
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
-        ImageView backPressButton = (ImageView) toolbar.findViewById(R.id.profile_click);
-        backPressButton.setImageDrawable(getResources().getDrawable(R.mipmap.arrow_white));
+        ImageView backPressButton = (ImageView) toolbar.findViewById(R.id.back_press);
         backPressButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +71,8 @@ public class WheelActivity extends AppCompatActivity implements SeekBar.OnSeekBa
         wheelView = new WheelView(linearLayout.getContext());
         ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         linearLayout.addView(wheelView, layoutParams);
+
+        UISuppurt.goneViews(toolbar.findViewById(R.id.profile_click));
 
         //передаю контект в view для оброботки нажатия i
         wheelView.setContext(this);
