@@ -8,6 +8,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.TableRow;
 
 import su.goday.goday.R;
 
@@ -36,19 +37,34 @@ public class CalendarMiniCircle extends View {
         p.setAntiAlias(true);
         p.setDither(true);
         RectF rect = new RectF();
-    /*    p.setColor(getResources().getColor(color));*/
-        p.setColor(getResources().getColor(R.color.progressbar_foreground_color));
+        //p.setColor(getResources().getColor(color));
+        p.setColor(Color.GREEN);
 
         float xr = 360 / 5;
 
-        int x = 50, y = 50;
-        rect.set(15, 15, 85, 85);
+        int w = getWidth();
+        int h = getHeight();
+
+        int centerx = w / 2, centery = h / 2, radius = h / 2;
+        if (h > w) radius = w / 2;
+
+
+        int sx1 = w / 2 - h / 2;
+        if (sx1 < 0) sx1 = 0;
+        int sy1 = h / 2 - w / 2;
+        if (sy1 < 0) sy1 = 0;
+        int sx2 = w / 2 + h / 2;
+        if (sx2 > w) sx2 = w;
+        int sy2 = h / 2 + w / 2;
+        if (sy2 > h) sy2 = h;
+
+        rect.set(sx1, sy1, sx2, sy2);
         canvas.drawArc(rect, 270, xr * partOf, true, p);
 
         p.setStyle(Paint.Style.STROKE);
         p.setColor(Color.BLACK);
         p.setStrokeWidth(2);
-        canvas.drawCircle(x, y, 36, p);
+        canvas.drawCircle(centerx, centery, radius, p);
     }
 
     public void setPartOf() {

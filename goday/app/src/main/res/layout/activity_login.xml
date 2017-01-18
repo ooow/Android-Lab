@@ -18,9 +18,9 @@
 
             <include layout="@layout/logo"></include>
 
-            <include layout="@layout/enter_edit_text"></include>
+            <include layout="@layout/fragment_enter_edit_text"></include>
 
-            <include layout="@layout/enter_button"></include>
+            <include layout="@layout/fragment_enter_button"></include>
 
             <TextView
                 android:id="@+id/forgotPassword"
